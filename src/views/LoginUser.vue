@@ -34,13 +34,10 @@ v<template>
 
                     </div>
                    
-                    <div class="flex justify-between">
-                       
-                        <a href="#" class="text-sm text-cyan-700 hover:underline dark:text-cyan-500">mot de passe oublié?</a>
-                    </div>
+                  
                     <button type="button" class="w-full text-white bg-cyan-700 hover:bg-cyan-700 focus:ring-4 focus:outline-none focus:ring-cyan-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" @click="showLogin()">Se connecter</button>
-                    <div class="text-sm font-medium text-gray-500 dark:text-gray-300">
-                        pas de compte? <a href="#" class="text-cyan-700 hover:underline dark:text-cyan-500">Creer ici</a>
+                    <div class="text-sm font-medium  border-t text-gray-900 dark:text-gray-300">
+                       <span class="cursor-pointer text-sm text-cyan-700 hover:underline dark:text-cyan-500">Mot de passe oublié</span><span class="ml-20 cursor-pointer text-sm text-cyan-700 hover:underline dark:text-cyan-500">S'inscrire</span>
                     </div>
                 </form>
             </div>

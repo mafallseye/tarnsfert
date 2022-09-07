@@ -7,6 +7,7 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "@ocrv/vue-tailwind-pagination": "^0.0.4",
     "daisyui": "^2.24.0",
     "flowbite": "^1.5.2",
     "vue": "^3.2.13",

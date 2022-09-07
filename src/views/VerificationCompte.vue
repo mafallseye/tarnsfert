@@ -125,7 +125,7 @@ export default {
       console.log("loading");
       setTimeout(() => {
         this.isLoading = false;
-        this.$router.push("/compteVerifier");
+        this.$router.push("/acce");
       }, 1000);
     },
   },

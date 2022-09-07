@@ -90,7 +90,7 @@
   </div>
 
   <div>
-    <Footer />
+ 
   </div>
 </template>
 
@@ -102,14 +102,13 @@
 import bradcrumb from "@/components/bradcrumb.vue";
 
 import { ref } from "vue";
-import Footer from "../components/Footer.vue";
+
 export default {
   name: "HomeView",
   components: {
   
     bradcrumb,
 
-    Footer,
   },
   setup() {
     const isLoading = ref(false);

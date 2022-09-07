@@ -11,7 +11,7 @@
     <!-- <p class="mb-5 text-base text-gray-500 sm:text-lg dark:text-gray-400">Stay up to date and move work forward with Flowbite on iOS &amp; Android. Download the app today.</p> 
     -->
      <form>
-            <div class="grid gap-6 mb-6 md:grid-cols-4">
+            <div class="grid gap-6 mb-6 md:grid-cols-3">
               <div>
                 <label
                   for="email"
@@ -46,13 +46,20 @@
                   class="block mb-2 text-sm font-medium text-black-900 dark:text-black-300"
                   >Valider:</label
                 >
-                <button
+                <button @click="showText=!showText"
                   type="button"
                   class="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-black-900 focus:outline-none bg-white border border-cyan-700 hover:bg-cyan-700 hover:text-white focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
                 >
                   Afficher
                 </button>
               </div>
+            </div>
+            <div class=" " v-if="showText">
+              <p>email:mseye@gmail.com</p>
+              <p>nom:seye</p>
+              <p>prenom:max</p>
+              <p>n°compte:1234567</p>
+              <p>   solde:$34567432</p>
             </div>
           </form>
           <div class="flex">
@@ -162,6 +169,11 @@ export default {
     return {
       isLoading,
     };
+  },
+  data(){
+return{
+showText:false
+}
   },
   methods: {
     onSubmit() {
